@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#614C54"
+    android:backgroundTint="@null"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/lengthButton"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="136dp"
+        android:text="LENGTH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/temperatureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="136dp"
+        android:text="TEMPUREATURE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lengthButton" />
+
+    <Button
+        android:id="@+id/weightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="136dp"
+        android:text="Weight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/temperatureButton" />
+
+    <EditText
+        android:id="@+id/myEditText"
+        android:layout_width="169dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="74dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/app_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#E1BEE7"
+        android:textColorHint="#E1BEE7"
+        app:layout_constraintStart_toEndOf="@+id/mySpinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/mySpinner"
+        android:layout_width="190dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/button"
+        android:dropDownWidth="match_parent"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/myEditText"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/measurement1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="49dp"
+        android:text="@string/measurement1"
+        android:textColor="#E1BEE7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myEditText" />
+
+    <TextView
+        android:id="@+id/measurement2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="49dp"
+        android:text="@string/measurement2"
+        android:textColor="#E1BEE7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/measurement1" />
+
+    <TextView
+        android:id="@+id/measurement3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="303dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/measurement3"
+        android:textColor="#E1BEE7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/measurement2" />
+
+    <TextView
+        android:id="@+id/measurementValue1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
+        android:text="@null"
+        android:textColor="#E1BEE7"
+        app:layout_constraintEnd_toStartOf="@+id/measurement1"
+        app:layout_constraintTop_toBottomOf="@+id/myEditText" />
+
+    <TextView
+        android:id="@+id/measurementValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:text="@null"
+        android:textColor="#E1BEE7"
+        app:layout_constraintEnd_toStartOf="@+id/measurement2"
+        app:layout_constraintTop_toBottomOf="@+id/measurementValue1" />
+
+    <TextView
+        android:id="@+id/measurementValue3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:text="@null"
+        android:textColor="#E1BEE7"
+        app:layout_constraintEnd_toStartOf="@+id/measurement3"
+        app:layout_constraintTop_toBottomOf="@+id/measurementValue2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

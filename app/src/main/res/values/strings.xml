@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="textbox">SIT305</string>
+    <string name="button">Length</string>
+    <string name="temperatureButton">Temperature</string>
+    <string name="measurement1">TextView</string>
+    <string name="measurement2">TextView</string>
+    <string name="measurement3">TextView</string>
+</resources>
