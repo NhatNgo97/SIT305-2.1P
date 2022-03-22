@@ -122,7 +122,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     Toast.makeText(MainActivity.this, "Please enter your value", Toast.LENGTH_SHORT).show();
 
                 } else if (mySpinner.getSelectedItem().toString() == "Kilograms") {
-                    Toast.makeText(MainActivity.this, "Please enter your value", Toast.LENGTH_SHORT).show();
                     double number = Double.parseDouble(myEditText.getText().toString());
                     double gram = number * 1000;
                     double ounce = number * 35.274;
