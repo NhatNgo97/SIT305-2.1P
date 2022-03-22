@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,9 +20,9 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
-    Button lengthButton;
-    Button weightButton;
-    Button temperatureButton;
+    ImageButton lengthButton;
+    ImageButton weightButton;
+    ImageButton temperatureButton;
     TextView measurement1;
     TextView measurement2;
     TextView measurement3;
