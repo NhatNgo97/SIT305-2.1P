@@ -8,41 +8,6 @@
     android:backgroundTint="@null"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/lengthButton"
-        android:layout_width="97dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="296dp"
-        android:layout_marginBottom="136dp"
-        android:text="LENGTH"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="DuplicateSpeakableTextCheck" />
-
-    <Button
-        android:id="@+id/temperatureButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="136dp"
-        android:text="TEMPUREATURE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lengthButton" />
-
-    <Button
-        android:id="@+id/weightButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="136dp"
-        android:text="Weight"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/temperatureButton" />
-
     <EditText
         android:id="@+id/myEditText"
         android:layout_width="169dp"
@@ -72,7 +37,8 @@
         app:layout_constraintEnd_toStartOf="@+id/myEditText"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/measurement1"
@@ -147,5 +113,43 @@
         android:textColor="#E1BEE7"
         app:layout_constraintEnd_toStartOf="@+id/measurement3"
         app:layout_constraintTop_toBottomOf="@+id/measurementValue2" />
+
+    <ImageButton
+        android:id="@+id/weightButton"
+        android:layout_width="109dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="84dp"
+        android:contentDescription="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/weight" />
+
+    <ImageButton
+        android:id="@+id/temperatureButton"
+        android:layout_width="102dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="84dp"
+        android:contentDescription="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/weightButton"
+        app:srcCompat="@drawable/temp" />
+
+    <ImageButton
+        android:id="@+id/lengthButton"
+        android:layout_width="98dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="104dp"
+        android:contentDescription="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/weightButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/length" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
